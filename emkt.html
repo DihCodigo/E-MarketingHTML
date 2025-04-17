@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - E-Marketing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 40px 20px;
+        }
+
+        .projects {
+            max-width: 1024px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+            color: #222;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin: 16px 16px 8px;
+            color: #111;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin: 0 16px 16px;
+            color: #555;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="projects">
+        <h2>Meus Projetos de E-Marketing</h2>
+        <div class="card-container">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <a href="./e-marketing_1/index.html" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&w=800&q=80"
+                        alt="Newsletter de campanha">
+                    <h3>Newsletter de Campanha</h3>
+                    <p>Template responsivo com chamada para ação e layout profissional.</p>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <a href="./e-marketing_2/index.html" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1581090700227-1e7c79d5d0b4?auto=format&fit=crop&w=800&q=80"
+                        alt="Lançamento de produto">
+                    <h3>Lançamento de Produto</h3>
+                    <p>E-mail clean e moderno para divulgação de novos produtos.</p>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <a href="./e-marketing_3/index.html" target="_blank">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80"
+                        alt="Boletim informativo de resultados">
+                    <h3>Boletim de Resultados</h3>
+                    <p>Boletim com gráficos e KPIs para clientes e leads qualificados.</p>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>

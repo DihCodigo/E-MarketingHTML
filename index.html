@@ -4,90 +4,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>document</title>
+
+
     <style>
-        .projects {
-            text-align: center;
-            margin: 50px auto;
-        }
+        @media screen and (max-width: 480px) {
+            .mobile-hide {
+                display: none;
+            }
 
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+            .mobile-show {
+                display: inline-table !important;
+            }
 
-        .card {
-            width: 300px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+            .emkt-table {
+                max-width: 360px !important;
+                width: 100% !important;
+                overflow-wrap: break-word;
+            }
 
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            margin: 15px;
-            font-size: 1.5rem;
-        }
-
-        .card p {
-            margin: 0 15px 15px;
-            font-size: 1rem;
-        }
-
-        .card a {
-            text-decoration: none;
-            color: inherit;
+            .responsive td {
+                width: 100% !important;
+                display: block !important;
+                padding: 0 !important;
+            }
         }
     </style>
 </head>
 
 <body>
-    <section class="projects">
-        <h2>Meus Projetos de E-Marketing</h2>
-        <div class="card-container">
-            <!-- Card 1 -->
-            <div class="card">
-                <a href="./e-marketing_1/index.html" target="_blank">
-                    <img src="imagem-do-projeto-1.jpg" alt="Projeto 1">
-                    <h3>Projeto 1</h3>
-                    <p>Breve descrição do Projeto 1.</p>
-                </a>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <a href="link-do-projeto-2.html">
-                    <img src="imagem-do-projeto-2.jpg" alt="Projeto 2">
-                    <h3>Projeto 2</h3>
-                    <p>Breve descrição do Projeto 2.</p>
-                </a>
-            </div>
+    <table align="center" cellspacing="0" cellpadding="0" class="emkt-table" style="max-width: 600px;" width="100%">
+        <tr align="center">
+            <td align="center">
+                <!--Desktop-->
+                <table align="center" cellspacing="0" cellpadding="0" class="mobile-hide"
+                    style="background-color: #f3f3f3;border-radius: 16px;" width="520">
+                    <tr>
+                        <td align="center">
+                            <p style="font-size:2.5rem; font-weight:900; color:#3d3061; margin:0 0 10px 0;">
+                                olá!
+                            </p>
 
-            <!-- Card 3 -->
-            <div class="card">
-                <a href="link-do-projeto-3.html">
-                    <img src="imagem-do-projeto-3.jpg" alt="Projeto 3">
-                    <h3>Projeto 3</h3>
-                    <p>Breve descrição do Projeto 3.</p>
-                </a>
-            </div>
+                            <p
+                                style="font-size:1.2rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; color:#444; margin:0 0 30px 0;">
+                                RECEBA NOSSAS BOAS-VINDO(A)S AO MEUS
+                            </p>
 
-            <!-- Adicione mais cards conforme necessário -->
-        </div>
-    </section>
+                            <p
+                                style="font-family:'Pacifico', cursive; font-size:1.8rem; color:#3d3061; margin:0 0 10px 0;">
+                                Projetos
+                            </p>
+
+                            <p
+                                style="font-size:4rem; font-weight:900; letter-spacing:0.05em; background:linear-gradient(45deg, #ff298a, #4ad9e4); -webkit-background-clip:text; -webkit-text-fill-color:transparent; display:inline-block; text-shadow:2px 2px 0px #111; margin:0;">
+                                EMKT
+                            </p>
+
+                            <p style="font-size:0.8rem; color:#999; margin-top:40px;">
+                                DESENVOLVIMENTO DE <span style="font-weight:bold; color:#2b2b2b;">César</span>
+                                <span style="color:#3d3061;">Diego</span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!--Mobile-->
+                <table align="center" cellspacing="0" cellpadding="0" class="mobile-show"
+                    style="display: none; background-color: #f3f3f3;border-radius: 16px;" width="360">
+                    <tr>
+                        <td align="center">
+                            <p style="font-size:2.5rem; font-weight:900; color:#3d3061; margin:0 0 10px 0;">
+                                olá!
+                            </p>
+
+                            <p
+                                style="font-size:1.2rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; color:#444; margin:0 0 30px 0;">
+                                RECEBA NOSSAS BOAS-VINDO(A)S AO MEUS
+                            </p>
+
+                            <p
+                                style="font-family:'Pacifico', cursive; font-size:1.8rem; color:#3d3061; margin:0 0 10px 0;">
+                                Projetos
+                            </p>
+
+                            <p
+                                style="font-size:4rem; font-weight:900; letter-spacing:0.05em; background:linear-gradient(45deg, #ff298a, #4ad9e4); -webkit-background-clip:text; -webkit-text-fill-color:transparent; display:inline-block; text-shadow:2px 2px 0px #111; margin:0;">
+                                EMKT
+                            </p>
+
+                            <p style="font-size:0.8rem; color:#999; margin-top:40px;">
+                                DESENVOLVIMENTO DE <span style="font-weight:bold; color:#2b2b2b;">César</span>
+                                <span style="color:#3d3061;">Diego</span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr align="center">
+            <td align="center">
+                <!--Desktop-->
+                <table class="mobile-hide" width="" style="">
+                    <tr>
+                        <td align="center">
+                            <table class="mobile-hide" width="" style="width: 520px;">
+                                <tr align="center">
+                                    <td align="center">
+                                        <p
+                                            style="font-family:Arial, sans-serif; font-size:14px; line-height:1.6; color:#444141;">
+                                            Obrigado por visitar meus projetos EMKT! Aqui compartilho soluções
+                                            criativas, ideias de
+                                            design e estratégias que desenvolvi com dedicação. Tudo foi pensado para
+                                            inspirar,
+                                            conectar e entregar valor real. Explore, descubra e, se curtir, entre em
+                                            contato. Será
+                                            um prazer colaborar e criar algo incrível com você! </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td align="center">
+                            <table class="mobile-hide" style="background: linear-gradient(135deg, #d0f0ff, #ffd6d6);" cellspacing="0"
+                                cellpadding="0">
+                                <tr align="center">
+                                    <td align="center">
+                                        <table class="mobile-hide" style="width: 252px;" cellspacing="0" cellpadding="0">
+                                            <tr align="center">
+                                                <td align="center">
+                                                    <p
+                                                        style="font-family:Arial, sans-serif; font-size:14px; line-height:1.6; color:#333;">
+                                                        Cada projeto EMKT foi desenvolvido com atenção total à
+                                                        responsividade e
+                                                        compatibilidade no Gmail e Outlook, tanto nas versões web quanto
+                                                        nos aplicativos para celular.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="center">
+                                        <table class="mobile-hide" style="width: 252px;" cellspacing="0" cellpadding="0">
+                                            <tr align="center">
+                                                <td align="center">
+                                                    <img src="./e-marketing_1/img/gmailoutlook.jpg" alt="" width="252">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td align="center">
+                            <table class="mobile-hide" style="background-color: #f5f5f5;width: 520px;" cellspacing="0" cellpadding="0">
+                                <tr align="center">
+                                    <td align="center">
+                                        <p
+                                            style="font-family:Arial, sans-serif; font-size:14px; line-height:1.6; color:#333; margin-bottom:10px;">
+                                            📩 Clique no botão abaixo para visualizar como os e-mails são exibidos nas
+                                            principais plataformas, incluindo Gmail e Outlook — tanto em suas versões
+                                            web quanto nos aplicativos móveis. </p>
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="center">
+                                        <a href="./emkt.html" target="_blank"><img src="./e-marketing_1/img/button (2).png" alt=""></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <!--Mobile-->
+                <table class="mobile-show" width="" style="display: none;">
+                    <tr>
+                        <td align="center">
+                            <table class="mobile-show emkt-table" width="" style="display: none; width: 520px;">
+                                <tr align="center">
+                                    <td align="center">
+                                        <p
+                                            style="font-family:Arial, sans-serif; font-size:14px; line-height:1.6; color:#444141;">
+                                            Obrigado por visitar meus projetos EMKT! Aqui compartilho soluções
+                                            criativas, ideias de
+                                            design e estratégias que desenvolvi com dedicação. Tudo foi pensado para
+                                            inspirar,
+                                            conectar e entregar valor real. Explore, descubra e, se curtir, entre em
+                                            contato. Será
+                                            um prazer colaborar e criar algo incrível com você! </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td align="center">
+                            <table class="mobile-show" style="display: none; background: linear-gradient(135deg, #d0f0ff, #ffd6d6);" cellspacing="0"
+                                cellpadding="0">
+                                <tr align="center">
+                                    <td align="center">
+                                        <table class="mobile-show" style="display: none; width: 252px;" cellspacing="0" cellpadding="0">
+                                            <td align="center">
+                                                <table class="mobile-show" style="display: none; width: 252px;" cellspacing="0" cellpadding="0">
+                                                    <tr align="center">
+                                                        <td align="center">
+                                                            <img src="./e-marketing_1/img/gmailoutlook.jpg" alt="" width="252">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <tr align="center">
+                                                <td align="center">
+                                                    <table class="mobile-show" style="display: none; width: 252px;" cellspacing="0" cellpadding="0">
+                                                        <tr align="center">
+                                                            <td align="center">
+                                                                <p
+                                                                    style="font-family:Arial, sans-serif; font-size:14px; line-height:1.6; color:#333;">
+                                                                    Cada projeto EMKT foi desenvolvido com atenção total à
+                                                                    responsividade e
+                                                                    compatibilidade no Gmail e Outlook, tanto nas versões web quanto
+                                                                    nos aplicativos para celular.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td align="center">
+                            <table class="mobile-show" style="display: none; background-color: #f5f5f5;width: 280px;" cellspacing="0" cellpadding="0">
+                                <tr align="center">
+                                    <td align="center">
+                                        <p
+                                            style="font-family:Arial, sans-serif; font-size:14px; line-height:1.6; color:#333; margin-bottom:10px;">
+                                            📩 Clique no botão abaixo para visualizar como os e-mails são exibidos nas
+                                            principais plataformas, incluindo Gmail e Outlook — tanto em suas versões
+                                            web quanto nos aplicativos móveis. </p>
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td align="center">
+                                        <a href="./emkt.html" target="_blank"><img src="./e-marketing_1/img/button (2).png" alt=""></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <img src="" width="1" height="1" alt="">
+
+    <custom name="opencounter" type="tracking" />
+    <div style="display:none; white-space:nowrap; font:15px courier; color:#ffffff; line-height:0;">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp;</div>
+
+    </table>
 
 </body>
 
